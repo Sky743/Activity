@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.dell.server.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="15dp"
+
+        >
+
+
+
+            <EditText
+                android:id="@+id/reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Registration number"
+                android:inputType="textCapWords"
+
+                android:textColor="#000000"
+                android:textSize="42px" />
+
+
+
+
+            <TextView
+                android:id="@+id/mac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusedByDefault="false"
+                android:hint="Mac Id"
+                android:inputType="textCapWords"
+                android:textSize="42px"
+                android:padding="5dp"
+                />
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/send"
+            style="?android:backgroundDimAmount"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_green_dark"
+            android:textColor="#ffffff"
+            android:onClick="onSend"
+            android:text="Send" />
+        <TextView
+            android:id="@+id/disp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textSize="20dp"
+            android:layout_marginTop="25dp"
+            android:textAlignment="center"
+            android:background="#44758596"/>
+
+    </LinearLayout>
+
+</android.widget.RelativeLayout>
